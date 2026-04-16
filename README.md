@@ -155,29 +155,3 @@ Suggested checks:
 3. Non-targeted traffic remains unaffected.
 4. Flow entries appear and expire according to configured timeout.
 5. Throughput and latency values are captured and explained.
-
-## 7. Rubric Mapping (25 Marks)
-
-1. Problem understanding and setup (4):
-- Sections 1 to 3.
-
-2. SDN logic and flow rule implementation (6):
-- `packet_in` handling, match-action logic, flow rule install, priority/timeouts in `pox/ext/host_discovery.py`.
-
-3. Functional correctness demo (6):
-- Section 4 command sequence.
-
-4. Performance observation and analysis (5):
-- Section 5 with ping, iperf, flow and port stats.
-
-5. Explanation, viva and validation (4):
-- Section 6 tests and ability to justify design decisions.
-
-## 8. Quick Viva Prep
-
-Be ready to explain:
-- Why packet-in occurs and how learning reduces controller load.
-- Why blocking uses higher priority drop rules.
-- Difference between idle timeout and hard timeout.
-- How ping and iperf reflect controller policy effects.
-- How flow table and port stats validate behavior.
